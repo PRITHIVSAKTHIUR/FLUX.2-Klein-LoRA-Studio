@@ -1,0 +1,16 @@
+git+https://github.com/huggingface/diffusers.git
+transformers==4.57.3
+huggingface_hub
+spaces==0.43.0
+sentencepiece
+torch==2.8.0
+bitsandbytes
+torchvision
+accelerate
+kernels # @vllm-flash-attn3
+torchao
+hf_xet
+gradio
+numpy
+peft
+av
