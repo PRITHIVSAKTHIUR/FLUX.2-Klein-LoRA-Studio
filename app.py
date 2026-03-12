@@ -84,6 +84,14 @@ LORA_STYLES = [
         "default_prompt": None
     },
     {
+        "image": "https://huggingface.co/spaces/prithivMLmods/FLUX.2-Klein-LoRA-Studio/resolve/main/examples/Snow-Klein-consistency.png",
+        "title": "Klein-Consistency",
+        "adapter_name": "klein-consistency",
+        "repo": "dx8152/Flux2-Klein-9B-Consistency",
+        "weights": "Klein-consistency.safetensors",
+        "default_prompt": None
+    },
+    {
         "image": "https://huggingface.co/linoyts/Flux2-Klein-Delight-LoRA/resolve/main/image_3.png",
         "title": "Klein-Delight-Style",
         "adapter_name": "klein-delight",
@@ -359,6 +367,11 @@ with gr.Blocks() as demo:
                             
         gr.Examples(
             examples=[
+                [
+                    ["examples/C.jpg"], 
+                    "Change the weather to stormy.", 
+                    "Klein-Consistency"
+                ],
                 [
                     ["examples/2.jpg"], 
                     "Relight the image to remove all existing lighting conditions and replace them with neutral, uniform illumination. Apply soft, evenly distributed lighting with no directional shadows, no harsh highlights, and no dramatic contrast. Maintain the original identity of all subjects exactly—preserve facial structure, skin tone, proportions, expressions, hair, clothing, and textures. Do not alter pose, camera angle, background geometry, or image composition. Lighting should appear balanced, and studio-neutral, similar to diffuse overcast or a soft lightbox setup. Ensure consistent exposure across the entire image with realistic depth and subtle shading only where necessary for form.", 
