@@ -1,4 +1,4 @@
-# **FLUX.2-Klein-LoRA-Studio**
+# **[FLUX.2-Klein-LoRA-Studio](https://huggingface.co/spaces/prithivMLmods/FLUX.2-Klein-LoRA-Studio)**
 
 > A Gradio-based demonstration for the black-forest-labs/FLUX.2-klein-9B model with lazy-loaded LoRA adapters for advanced image editing and style application. Supports specialized LoRAs like Klein-Delight-Style, with fast inference using bfloat16 and dynamic adapter loading to optimize memory. Features auto-resizing to multiples of 16, seed randomization, and guidance scale adjustments.
 
