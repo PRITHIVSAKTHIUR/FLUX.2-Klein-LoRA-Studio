@@ -1,4 +1,4 @@
-# **FLUX.2-Klein-LoRA-Studio**
+# **[FLUX.2-Klein-LoRA-Studio](https://huggingface.co/spaces/prithivMLmods/FLUX.2-Klein-LoRA-Studio)**
 
 FLUX.2-Klein-LoRA-Studio is an experimental, advanced image-to-image manipulation and style translation ecosystem. Built upon the robust `black-forest-labs/FLUX.2-klein-9B` distilled foundation model, this suite integrates a dynamic multi-LoRA switching framework pre-loaded with highly specialized workflow adapters.
 
