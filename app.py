@@ -198,7 +198,7 @@ def get_image_count_info(images):
     else:
         return f"📷 {count} images uploaded"
 
-@spaces.GPU
+@spaces.GPU(size="xlarge")
 def infer(
     input_images, 
     prompt, 
@@ -289,7 +289,7 @@ def infer(
         gc.collect()
         torch.cuda.empty_cache()
 
-@spaces.GPU
+@spaces.GPU(size="xlarge")
 def infer_example(input_images, prompt, style_name):
     if not input_images: 
         return None, 0
@@ -319,7 +319,7 @@ css = """
 with gr.Blocks() as demo:
     with gr.Column(elem_id="col-container"):
         gr.Markdown("# **FLUX.2-Klein-LoRA-Studio**", elem_id="main-title")
-        gr.Markdown("Perform diverse image edits using specialized [LoRAs](https://huggingface.co/models?other=base_model:adapter:black-forest-labs/FLUX.2-klein-9B) adapters for the [FLUX.2-Klein-Distilled](https://huggingface.co/black-forest-labs/FLUX.2-klein-9B) model.")
+        gr.Markdown("Perform diverse image edits using specialized [LoRAs](https://huggingface.co/models?other=base_model:adapter:black-forest-labs/FLUX.2-klein-9B) adapters for the [FLUX.2-Klein-Distilled](https://huggingface.co/black-forest-labs/FLUX.2-klein-9B) model. Open on [GitHub](https://github.com/PRITHIVSAKTHIUR/FLUX.2-Klein-LoRA-Studio)")
         
         selected_style_name = gr.Textbox(value="None", visible=False, label="Selected Style Name")
         
