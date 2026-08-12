@@ -4,8 +4,7 @@ FLUX.2-Klein-LoRA-Studio is an experimental, high-performance image-to-image man
 
 The workspace is served via a single-page web app built with a FastAPI backend server (`gradio.Server`) and a dark-mode frontend interface featuring a dual-view canvas, A/B comparison slider, history filmstrip, and interactive prompt suggestions.
 
-
-
+<img width="1919" height="846" alt="Screenshot 2026-08-12 105139" src="https://github.com/user-attachments/assets/6284304c-217e-4b57-9ff3-970de3181df0" />
 
 ### **Key Features**
 
