@@ -1,4 +1,4 @@
-# **FLUX.2-Klein-LoRA-Studio**
+# **[FLUX.2-Klein-LoRA-Studio](https://huggingface.co/spaces/prithivMLmods/FLUX.2-Klein-LoRA-Studio)**
 
 FLUX.2-Klein-LoRA-Studio is an experimental, high-performance image-to-image manipulation and style-transfer platform built on top of the `black-forest-labs/FLUX.2-klein-9B` model. The application integrates specialized LoRA adapters—such as `Klein-Consistency`, `Klein-Delight-Style`, `Best-Face-Swap`, and `Ghost-Mannequin`—to deliver precision edits including consistency-preserved transformations, lighting neutralizations, identity-locked face swaps, and 3D apparel volume creation.
 
