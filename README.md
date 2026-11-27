@@ -17,8 +17,6 @@ The workspace is served via a single-page web app built with a FastAPI backend s
 ### **Repository Structure**
 
 ```text
-├── .gitignore
-├── .python-version
 ├── examples/
 │   ├── 1.jpg
 │   ├── 2.jpg
@@ -28,9 +26,6 @@ The workspace is served via a single-page web app built with a FastAPI backend s
 │   ├── image.webp
 │   ├── mc.png
 │   └── Snow-Klein-consistency.png
-├── src/
-│   └── flux_2_klein_lora_studio/
-│       └── __init__.py
 ├── app.py
 ├── index.html
 ├── LICENSE.txt
@@ -46,7 +41,7 @@ The workspace is served via a single-page web app built with a FastAPI backend s
 
 To set up the FLUX.2-Klein-LoRA-Studio environment locally, configure your system according to the specifications below. A modern CUDA-enabled GPU is required.
 
-* **Python Version:** Python **3.14** is required (`requires-python = ">=3.14"`); the bundled `.python-version` pins **3.14**.
+* **Python Version:** Python **3.14** or newer is required (`requires-python = ">=3.14"`).
 * **PyTorch Version:** `torch==2.11.0` or above is required for best compatibility.
 * **CUDA Version:** CUDA **13.0** is recommended (`--extra-index-url https://download.pytorch.org/whl/cu130`), matching the environment used on the live Hugging Face demo.
 

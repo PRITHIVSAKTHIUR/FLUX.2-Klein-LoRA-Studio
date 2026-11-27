@@ -19,10 +19,3 @@ dependencies = [
     "torchvision==0.26.0",
     "transformers==5.14.1",
 ]
-
-[project.scripts]
-flux-2-klein-lora-studio = "flux_2_klein_lora_studio:main"
-
-[build-system]
-requires = ["uv_build>=0.12.13,<0.13.0"]
-build-backend = "uv_build"
