@@ -17,6 +17,8 @@ The workspace is served via a single-page web app built with a FastAPI backend s
 ### **Repository Structure**
 
 ```text
+├── .gitignore
+├── .python-version
 ├── examples/
 │   ├── 1.jpg
 │   ├── 2.jpg
@@ -26,11 +28,9 @@ The workspace is served via a single-page web app built with a FastAPI backend s
 │   ├── image.webp
 │   ├── mc.png
 │   └── Snow-Klein-consistency.png
-├── qwenimage/
-│   ├── __init__.py
-│   ├── pipeline_qwenimage_edit_plus.py
-│   ├── qwen_fa3_processor.py
-│   └── transformer_qwenimage.py
+├── src/
+│   └── flux_2_klein_lora_studio/
+│       └── __init__.py
 ├── app.py
 ├── index.html
 ├── LICENSE.txt
@@ -46,9 +46,9 @@ The workspace is served via a single-page web app built with a FastAPI backend s
 
 To set up the FLUX.2-Klein-LoRA-Studio environment locally, configure your system according to the specifications below. A modern CUDA-enabled GPU is required.
 
-* **Python Version:** Minimum Python **3.12** is needed; Python **3.12** or **3.14** is recommended.
+* **Python Version:** Python **3.14** is required (`requires-python = ">=3.14"`); the bundled `.python-version` pins **3.14**.
 * **PyTorch Version:** `torch==2.11.0` or above is required for best compatibility.
-* **CUDA Version:** CUDA **13.0** is recommended (`--extra-index-url [https://download.pytorch.org/whl/cu130](https://download.pytorch.org/whl/cu130)`), matching the environment used on the live Hugging Face demo.
+* **CUDA Version:** CUDA **13.0** is recommended (`--extra-index-url https://download.pytorch.org/whl/cu130`), matching the environment used on the live Hugging Face demo.
 
 #### **Running with `uv` (Recommended)**
 
@@ -84,7 +84,7 @@ uv run app.py
 Upgrade your local package manager:
 
 ```bash
-pip install pip>=26.1.2
+pip install "pip>=26.2.1"
 ```
 
 **2. Install Core Dependencies**
@@ -104,11 +104,10 @@ transformers==5.14.1
 accelerate==1.14.0
 diffusers==0.39.0
 peft==0.19.1
-gradio==6.22.0
+gradio==6.30.0
 av==17.1.0
-spaces==0.51.1
+spaces>=0.51.3
 huggingface-hub==1.24.0
-kernels==0.16.0
 ```
 
 ### **Usage**
